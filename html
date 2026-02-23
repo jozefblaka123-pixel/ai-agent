@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Agent Directory</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <h1>AI Agent Directory</h1>
+      <nav>
+        <a href="#home">Domov</a>
+        <a href="#agents">Agenti</a>
+        <a href="#submit">Pridať agenta</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Objavte najlepších AI agentov na jednom mieste</h2>
+      <p>Jednoducho vyhľadajte, porovnajte a vyberte si AI agentov podľa kategórie alebo využitia.</p>
+    </div>
+  </section>
+  <section id="agents" class="agents">
+    <div class="container">
+      <h3>Ukážkové kategórie</h3>
+      <div class="categories">
+        <div class="category">Biznis automatizácia</div>
+        <div class="category">Vývojárske nástroje</div>
+        <div class="category">Digitálni pracovníci</div>
+        <div class="category">General asistenti</div>
+        <div class="category">Zdravotníctvo</div>
+      </div>
+      <h3>Ukážkoví agenti</h3>
+      <div class="agent-list">
+        <div class="agent-item">
+          <h4>Agent A</h4>
+          <p>Krátky popis agenta A, ktorý demonštruje, ako bude vyzerať karta agenta.</p>
+          <a href="#" class="button">Viac info</a>
+        </div>
+        <div class="agent-item">
+          <h4>Agent B</h4>
+          <p>Popis druhého agenta s ukážkou rôznych možností.</p>
+          <a href="#" class="button">Viac info</a>
+        </div>
+        <div class="agent-item">
+          <h4>Agent C</h4>
+          <p>Tretí agent s krátkym popisom a odkazom na ďalšie informácie.</p>
+          <a href="#" class="button">Viac info</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="submit" class="submit-form">
+    <div class="container">
+      <h3>Pridať nového agenta</h3>
+      <form method="post">
+        <label>Názov agenta:<br>
+          <input type="text" name="agent_name" required>
+        </label>
+        <label>Webová stránka agenta:<br>
+          <input type="url" name="agent_url" required>
+        </label>
+        <label>Stručný opis:<br>
+          <textarea name="description" rows="4" maxlength="160" required></textarea>
+        </label>
+        <button type="submit">Odoslať</button>
+      </form>
+      <p>Po odoslaní bude váš agent posúdený a pridáme ho do zoznamu.</p>
+    </div>
+  </section>
+  <section id="contact" class="contact">
+    <div class="container">
+      <h3>Kontakt</h3>
+      <p>Máte otázky alebo návrhy? Kontaktujte nás na <a href="mailto:info@example.com">info@example.com</a>.</p>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 AI Agent Directory. Všetky práva vyhradené.</p>
+    </div>
+  </footer>
+</body>
+</html>
