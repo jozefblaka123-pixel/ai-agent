@@ -18,42 +18,88 @@
       </nav>
     </div>
   </header>
+
   <section id="home" class="hero">
     <div class="container">
-      <h2>Objavte najlepších AI agentov na jednom mieste</h2>
-      <p>Jednoducho vyhľadajte, porovnajte a vyberte si AI agentov podľa kategórie alebo využitia.</p>
+      <h2>Objavte stovky AI agentov na jednom mieste</h2>
+      <p>Vyhľadajte, porovnajte a vyberte si AI agentov podľa kategórie alebo využitia.</p>
     </div>
   </section>
+
   <section id="agents" class="agents">
     <div class="container">
-      <h3>Ukážkové kategórie</h3>
-      <div class="categories">
-        <div class="category">Biznis automatizácia</div>
-        <div class="category">Vývojárske nástroje</div>
-        <div class="category">Digitálni pracovníci</div>
-        <div class="category">General asistenti</div>
-        <div class="category">Zdravotníctvo</div>
-      </div>
-      <h3>Ukážkoví agenti</h3>
-      <div class="agent-list">
-        <div class="agent-item">
-          <h4>Agent A</h4>
-          <p>Krátky popis agenta A, ktorý demonštruje, ako bude vyzerať karta agenta.</p>
-          <a href="#" class="button">Viac info</a>
+      <h3>Prehľad agentov</h3>
+      <div class="agent-grid">
+        <!-- Skutočné mená s krátkym popisom podľa overených zdrojov -->
+        <div class="agent-card">
+          <h4>Hugo</h4>
+          <p>AI asistent pre zákaznícku podporu0.</p>
         </div>
-        <div class="agent-item">
-          <h4>Agent B</h4>
-          <p>Popis druhého agenta s ukážkou rôznych možností.</p>
-          <a href="#" class="button">Viac info</a>
+        <div class="agent-card">
+          <h4>Clay</h4>
+          <p>Pomáha nájsť a využiť údaje pre rast biznisu1.</p>
         </div>
-        <div class="agent-item">
-          <h4>Agent C</h4>
-          <p>Tretí agent s krátkym popisom a odkazom na ďalšie informácie.</p>
-          <a href="#" class="button">Viac info</a>
+        <div class="agent-card">
+          <h4>StartClaw</h4>
+          <p>AI zamestnanec na cloudové úlohy2.</p>
         </div>
+        <div class="agent-card">
+          <h4>Agent Zero</h4>
+          <p>Softvérový inžiniersky agent3.</p>
+        </div>
+        <div class="agent-card">
+          <h4>Outpost CRM</h4>
+          <p>AI predajný asistent pre automatizáciu úloh4.</p>
+        </div>
+        <div class="agent-card">
+          <h4>Turbotic</h4>
+          <p>Nástroj na rýchlu automatizáciu obchodných procesov5.</p>
+        </div>
+        <div class="agent-card">
+          <h4>AgentsLed</h4>
+          <p>AI pomocník pre marketingové kampane6.</p>
+        </div>
+        <div class="agent-card">
+          <h4>BrowserAct</h4>
+          <p>Nástroj na automatizáciu webových úloh bez kódu7.</p>
+        </div>
+        <div class="agent-card">
+          <h4>Credal AI</h4>
+          <p>Zabezpečené prepojenie AI so systémami firmy8.</p>
+        </div>
+        <div class="agent-card">
+          <h4>Cognigy</h4>
+          <p>Platforma pre AI zákaznícku podporu9.</p>
+        </div>
+        <div class="agent-card">
+          <h4>Lorikeet</h4>
+          <p>AI podpora pre komplexné zákaznícke problémy10.</p>
+        </div>
+        <div class="agent-card">
+          <h4>Commabot</h4>
+          <p>Chatovací agent pre dátovú analýzu11.</p>
+        </div>
+        <div class="agent-card">
+          <h4>Converzation AI</h4>
+          <p>Automatizácia zákazníckej podpory pomocou AI12.</p>
+        </div>
+        <div class="agent-card">
+          <h4>Enjo</h4>
+          <p>AI agent pre helpdesk a rýchle riešenie problémov13.</p>
+        </div>
+        <div class="agent-card">
+          <h4>Kenley</h4>
+          <p>Automatizuje poradenské úlohy pomocou AI14.</p>
+        </div>
+        <div class="agent-card">
+          <h4>Litero AI</h4>
+          <p>Pomocník na písanie a citovanie15.</p>
+        </div>
+        <!-- Dočasné zástupné karty budú doplnené pomocou JavaScriptu -->
       </div>
     </div>
   </section>
+
   <section id="submit" class="submit-form">
     <div class="container">
       <h3>Pridať nového agenta</h3>
@@ -72,16 +118,29 @@
       <p>Po odoslaní bude váš agent posúdený a pridáme ho do zoznamu.</p>
     </div>
   </section>
+
   <section id="contact" class="contact">
     <div class="container">
       <h3>Kontakt</h3>
-      <p>Máte otázky alebo návrhy? Kontaktujte nás na <a href="mailto:info@example.com">info@example.com</a>.</p>
+      <p>Máte otázky alebo návrhy? Napíšte nám na <a href="mailto:info@example.com">info@example.com</a>.</p>
     </div>
   </section>
+
   <footer class="footer">
     <div class="container">
       <p>&copy; 2026 AI Agent Directory. Všetky práva vyhradené.</p>
     </div>
   </footer>
+
+  <script>
+  // Dynamické doplnenie dočasných agentov od čísla 17 do 100
+  const grid = document.querySelector('.agent-grid');
+  for (let i = 17; i <= 100; i++) {
+    const card = document.createElement('div');
+    card.className = 'agent-card';
+    card.innerHTML = '<h4>Agent ' + i + '</h4><p>Popis agenta ' + i + ' – dočasný zástupný text.</p>';
+    grid.appendChild(card);
+  }
+  </script>
 </body>
 </html>
